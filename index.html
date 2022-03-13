@@ -7,34 +7,49 @@
     <title>Aforo Personas</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
    <div class="contenedor">
        
        <div class="software">
+           <div class="alerta_naranja">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+               <p>Proximo a alcanzar el maximo permitido.</p>
+           </div>
+           <div class="alerta_roja">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+               <p>Has alcanzado el Maximo permitido.</p>
+           </div>
+           <div class="alerta_mas_roja">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+               <p>Maximo permitido sobrepasado.</p>
+           </div>
         <header>
-            <h1>AFORO MAXIMO</h1>
+            <h1>AFORO<span class="max">MAX</span></h1>
             <p>Control de asistencia dentro del local.</p>
+            <p>Aforo maximo (30)</p>
         </header>
         <div class="actual">
-            <label for="">Asistencia actual</label>
+            <!-- <i class="fa-solid fa-triangle-exclamation"></i> -->
+            <label for="" class="aforo">Asistencia actual <i class="fa-solid fa-triangle-exclamation tri_1" title=""></i> </label>
             <input type="text" value="0" class="af_actual" readonly>
         </div>
         <div class="actual_in">
-            <label for="">Ingreso Total Dia</label>
+            <label for="">Ingreso Total</label>
             <input type="text" value="0" class="total_ing" readonly>
         </div>
         <div class="actual_sal">
-            <label for="">Salidas Total Dia</label>
+            <label for="">Salidas Total</label>
             <input type="text" value="0" class="total_sali" readonly>
         </div>
 
         <div class="botones">
             <div class="entrada">
-                <input type="button" value="entrada" class="btn_ent">
+                <input type="button" value="Entrada" class="btn_ent">
             </div>
             <div class="salida">
-                <input type="button" value="salida" class="btn_sal">
+                <input type="button" value="Salida" class="btn_sal">
             </div>
         </div>
        </div>
