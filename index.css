@@ -5,7 +5,7 @@
 
 }
 body{
-    background-image:linear-gradient(to right, white,rgb(0, 0, 116),white);
+    background-image:linear-gradient(to right, white,rgb(209, 209, 248),white);
 }
 .contenedor{
     font-family: "public sans";
@@ -18,8 +18,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-i: rgb(0, 0, 0); */
-
 }
 .software{
     background-color: rgb(112, 129, 255);
@@ -32,6 +30,18 @@ body{
     justify-content: center;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0 95px 0px rgb(32, 32, 32);
+}
+.reset{
+    color:rgb(179, 5, 5);
+    background-color: rgb(159, 175, 253);
+    padding: 5px;
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .max{
@@ -124,18 +134,11 @@ body{
     width: 100px;
     border-radius: 5px;
     overflow: hidden;
-    /* padding: 2px; */
-
 }
 .salida{
-    /* display: none; */
     right: 15px;
     top:5px;
     background-color: aqua;
-    /* z-index: 5; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 .entrada{
     left:15px;

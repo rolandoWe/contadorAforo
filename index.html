@@ -12,8 +12,10 @@
 </head>
 <body>
    <div class="contenedor">
-    <!-- <i class="fa-solid fa-floppy-disk guardar"></i> -->
        <div class="software">
+    <!-- <i class="fa-solid fa-floppy-disk reset"></i> -->
+    <!-- <i class="fa-solid fa-power-off reset"><span>reset</span></i> -->
+
            <div class="alerta_naranja">
             <i class="fa-solid fa-triangle-exclamation"></i>
                <p>Próximo a alcanzar el máximo permitido.</p>
@@ -37,25 +39,28 @@
         </div>
         <div class="actual_in">
             <label for="">Ingreso Total</label>
-            <input type="text" value="0" class="total_ing" readonly>
+            <input type="text" value="0" class="total_ing" readonly placeholder="0">
         </div>
         <div class="actual_sal">
             <label for="">Salida Total</label>
-            <input type="text" value="0" class="total_sali" readonly>
+            <input type="text" value="0" class="total_sali" readonly placeholder="0">
         </div>
 
         <div class="botones">
             <div class="entrada">
-                <input type="button" value="Entrada" class="btn_ent">
+                <input type="button" value="Entrada" class="btn_ent" placeholder="0">
             </div>
+    <i class="fa-solid fa-power-off reset"><span> reset</span></i>
+
             <div class="salida">
-                <input type="button" value="Salida" class="btn_sal">
+                <input type="button" value="Salida" class="btn_sal mostrar_btn">
             </div>
         </div>
        </div>
 
    </div> 
+   <script src="indexLocal.js"></script>
    <script src="index.js"></script>
-   <!-- <script src="indexLocal.js"></script> -->
+
 </body>
 </html>
