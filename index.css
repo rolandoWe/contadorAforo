@@ -5,11 +5,11 @@
 
 }
 body{
-    background-image:linear-gradient(to right, white,rgb(209, 209, 248),white);
+    background-color: rgb(112, 129, 255);
+
 }
 .contenedor{
     font-family: "public sans";
-    /* border:solid black 1px; */
     margin: auto;
     width:100%;
     height:100vh;
@@ -33,10 +33,10 @@ body{
     box-shadow: 0 0 95px 0px rgb(32, 32, 32);
 }
 .reset{
-    color:rgb(179, 5, 5);
-    background-color: rgb(159, 175, 253);
+    color:rgb(255, 255, 255);
+    background-color: rgb(5, 58, 2);
     padding: 5px;
-    font-size: 10px;
+    font-size: 15px;
     position: absolute;
     top: 10px;
     left: 40%;
@@ -64,9 +64,7 @@ body{
     text-align: center;
     font-size: 18px;
     box-sizing: border-box;
-    /* margin-left: 10%; */
     border: none;
-
 }
 .actual{
     height: 100px;
@@ -93,7 +91,6 @@ body{
 .actual_in,.actual_sal{
     margin: auto;
     width:45%;
-    /* height: 70px; */
     padding: 5px;
 }
 .total_ing,.total_sali{
@@ -120,8 +117,6 @@ body{
     width: 100%;
     height:40px;
     position: relative;
-
-    /* background-color: rgb(255, 255, 255); */
 }
 .botones input{
     width:100%;
@@ -153,18 +148,15 @@ body{
     background-color: rgb(255, 0, 0);
     cursor: pointer;
     width: 100%;
-    /* transform: scale(1.1); */
     position: relative;
 }
 .btn_ent,.btn_sal{
     font-family: "public sans";
     font-size: 18px;
     color: white;
-
 }
 .mostrar_btn{
     z-index: 1;
-
 }
 .salida::after{
     content: "Salida";

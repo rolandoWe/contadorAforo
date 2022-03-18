@@ -18,9 +18,6 @@
     localStorage.setItem("aforo",contarEnt)
     localStorage.setItem("contarSal",contarSal)
  }
- function operarContador(){
-   document.querySelector(".total_ing").value=entrada+sali
- }
 
  function pintarHtml(){
     let conta=JSON.parse(localStorage.getItem("aforo"))
@@ -38,7 +35,6 @@
    }
  }
  function operar(){
-
    let contaF=JSON.parse(localStorage.getItem("aforo"))
    let conta=JSON.parse(localStorage.getItem("contarSal"))
 
